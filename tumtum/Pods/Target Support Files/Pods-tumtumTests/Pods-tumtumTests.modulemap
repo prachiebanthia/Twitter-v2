@@ -1,6 +1,0 @@
-framework module Pods_tumtumTests {
-  umbrella header "Pods-tumtumTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
