@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CB00D3F9BA30A85E29F5B22 /* Pods_tum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D2B700310A6EB2479F8FF2 /* Pods_tum.framework */; };
+		82766A4ABB8F5F15CFE93175 /* Pods_tumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6EC1B87D87974735505A0ED /* Pods_tumUITests.framework */; };
+		849161A314C61805E30B8D62 /* Pods_tumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07BA761262C494BBBD9F1B8 /* Pods_tumTests.framework */; };
 		AB7CC8D71DB3EB71005EEE5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7CC8D61DB3EB71005EEE5A /* AppDelegate.swift */; };
-		AB7CC8D91DB3EB71005EEE5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7CC8D81DB3EB71005EEE5A /* ViewController.swift */; };
+		AB7CC8D91DB3EB71005EEE5A /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7CC8D81DB3EB71005EEE5A /* PhotosViewController.swift */; };
 		AB7CC8DC1DB3EB71005EEE5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7CC8DA1DB3EB71005EEE5A /* Main.storyboard */; };
 		AB7CC8DE1DB3EB71005EEE5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB7CC8DD1DB3EB71005EEE5A /* Assets.xcassets */; };
 		AB7CC8E11DB3EB71005EEE5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7CC8DF1DB3EB71005EEE5A /* LaunchScreen.storyboard */; };
 		AB7CC8EC1DB3EB72005EEE5A /* tumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7CC8EB1DB3EB72005EEE5A /* tumTests.swift */; };
 		AB7CC8F71DB3EB72005EEE5A /* tumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7CC8F61DB3EB72005EEE5A /* tumUITests.swift */; };
+		AB7CC9051DB3ECE9005EEE5A /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7CC9041DB3ECE9005EEE5A /* PhotoCell.swift */; };
+		AB7CC9071DB3ED9C005EEE5A /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7CC9061DB3ED9C005EEE5A /* PhotoDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		229227F7F074D04B4612CCE1 /* Pods-tumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tumTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tumTests/Pods-tumTests.release.xcconfig"; sourceTree = "<group>"; };
+		24F6643673EA2B9633D637C6 /* Pods-tumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tumUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tumUITests/Pods-tumUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		53D2B700310A6EB2479F8FF2 /* Pods_tum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DB4131261A740974E685065 /* Pods-tum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tum/Pods-tum.debug.xcconfig"; sourceTree = "<group>"; };
+		652D403FF4FA8B7212793991 /* Pods-tumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tumTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tumTests/Pods-tumTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB7CC8D31DB3EB71005EEE5A /* tum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB7CC8D61DB3EB71005EEE5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB7CC8D81DB3EB71005EEE5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB7CC8D81DB3EB71005EEE5A /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		AB7CC8DB1DB3EB71005EEE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB7CC8DD1DB3EB71005EEE5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB7CC8E01DB3EB71005EEE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +57,12 @@
 		AB7CC8F21DB3EB72005EEE5A /* tumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB7CC8F61DB3EB72005EEE5A /* tumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tumUITests.swift; sourceTree = "<group>"; };
 		AB7CC8F81DB3EB72005EEE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB7CC9041DB3ECE9005EEE5A /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		AB7CC9061DB3ED9C005EEE5A /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
+		C07BA761262C494BBBD9F1B8 /* Pods_tumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6EC1B87D87974735505A0ED /* Pods_tumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D720E42743803A608137D340 /* Pods-tum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tum.release.xcconfig"; path = "Pods/Target Support Files/Pods-tum/Pods-tum.release.xcconfig"; sourceTree = "<group>"; };
+		DAEDBB441336484FA81C7DA5 /* Pods-tumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tumUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tumUITests/Pods-tumUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB00D3F9BA30A85E29F5B22 /* Pods_tum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849161A314C61805E30B8D62 /* Pods_tumTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +86,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82766A4ABB8F5F15CFE93175 /* Pods_tumUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6800576916A260623DADA6F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53D2B700310A6EB2479F8FF2 /* Pods_tum.framework */,
+				C07BA761262C494BBBD9F1B8 /* Pods_tumTests.framework */,
+				C6EC1B87D87974735505A0ED /* Pods_tumUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB7CC8CA1DB3EB71005EEE5A = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +110,8 @@
 				AB7CC8EA1DB3EB72005EEE5A /* tumTests */,
 				AB7CC8F51DB3EB72005EEE5A /* tumUITests */,
 				AB7CC8D41DB3EB71005EEE5A /* Products */,
+				C41503009087424CABE8A741 /* Pods */,
+				6800576916A260623DADA6F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +129,10 @@
 			isa = PBXGroup;
 			children = (
 				AB7CC8D61DB3EB71005EEE5A /* AppDelegate.swift */,
-				AB7CC8D81DB3EB71005EEE5A /* ViewController.swift */,
+				AB7CC8D81DB3EB71005EEE5A /* PhotosViewController.swift */,
 				AB7CC8DA1DB3EB71005EEE5A /* Main.storyboard */,
+				AB7CC9061DB3ED9C005EEE5A /* PhotoDetailsViewController.swift */,
+				AB7CC9041DB3ECE9005EEE5A /* PhotoCell.swift */,
 				AB7CC8DD1DB3EB71005EEE5A /* Assets.xcassets */,
 				AB7CC8DF1DB3EB71005EEE5A /* LaunchScreen.storyboard */,
 				AB7CC8E21DB3EB71005EEE5A /* Info.plist */,
@@ -125,6 +158,19 @@
 			path = tumUITests;
 			sourceTree = "<group>";
 		};
+		C41503009087424CABE8A741 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DB4131261A740974E685065 /* Pods-tum.debug.xcconfig */,
+				D720E42743803A608137D340 /* Pods-tum.release.xcconfig */,
+				652D403FF4FA8B7212793991 /* Pods-tumTests.debug.xcconfig */,
+				229227F7F074D04B4612CCE1 /* Pods-tumTests.release.xcconfig */,
+				24F6643673EA2B9633D637C6 /* Pods-tumUITests.debug.xcconfig */,
+				DAEDBB441336484FA81C7DA5 /* Pods-tumUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB7CC8FB1DB3EB72005EEE5A /* Build configuration list for PBXNativeTarget "tum" */;
 			buildPhases = (
+				A705A2FC68C190E4BF7D6D7D /* [CP] Check Pods Manifest.lock */,
 				AB7CC8CF1DB3EB71005EEE5A /* Sources */,
 				AB7CC8D01DB3EB71005EEE5A /* Frameworks */,
 				AB7CC8D11DB3EB71005EEE5A /* Resources */,
+				DDEFE2BBA67F9BC12F3D4513 /* [CP] Embed Pods Frameworks */,
+				CAEB320D3FA1BFD8825C3C68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB7CC8FE1DB3EB72005EEE5A /* Build configuration list for PBXNativeTarget "tumTests" */;
 			buildPhases = (
+				B9DECCA69C27BAD433962AC9 /* [CP] Check Pods Manifest.lock */,
 				AB7CC8E31DB3EB72005EEE5A /* Sources */,
 				AB7CC8E41DB3EB72005EEE5A /* Frameworks */,
 				AB7CC8E51DB3EB72005EEE5A /* Resources */,
+				6A9E3983C801627C7F75FD2B /* [CP] Embed Pods Frameworks */,
+				3F8BAF75D263E2521D4640C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB7CC9011DB3EB72005EEE5A /* Build configuration list for PBXNativeTarget "tumUITests" */;
 			buildPhases = (
+				71A101E61E9CCE0C6FBCE2CD /* [CP] Check Pods Manifest.lock */,
 				AB7CC8EE1DB3EB72005EEE5A /* Sources */,
 				AB7CC8EF1DB3EB72005EEE5A /* Frameworks */,
 				AB7CC8F01DB3EB72005EEE5A /* Resources */,
+				31CD4519F89CB247B929A541 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,12 +308,137 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31CD4519F89CB247B929A541 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tumUITests/Pods-tumUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F8BAF75D263E2521D4640C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tumTests/Pods-tumTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A9E3983C801627C7F75FD2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tumTests/Pods-tumTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71A101E61E9CCE0C6FBCE2CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A705A2FC68C190E4BF7D6D7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9DECCA69C27BAD433962AC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CAEB320D3FA1BFD8825C3C68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tum/Pods-tum-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDEFE2BBA67F9BC12F3D4513 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tum/Pods-tum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AB7CC8CF1DB3EB71005EEE5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB7CC8D91DB3EB71005EEE5A /* ViewController.swift in Sources */,
+				AB7CC9071DB3ED9C005EEE5A /* PhotoDetailsViewController.swift in Sources */,
+				AB7CC8D91DB3EB71005EEE5A /* PhotosViewController.swift in Sources */,
+				AB7CC9051DB3ECE9005EEE5A /* PhotoCell.swift in Sources */,
 				AB7CC8D71DB3EB71005EEE5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +589,7 @@
 		};
 		AB7CC8FC1DB3EB72005EEE5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DB4131261A740974E685065 /* Pods-tum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tum/Info.plist;
@@ -422,6 +602,7 @@
 		};
 		AB7CC8FD1DB3EB72005EEE5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D720E42743803A608137D340 /* Pods-tum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tum/Info.plist;
@@ -434,6 +615,7 @@
 		};
 		AB7CC8FF1DB3EB72005EEE5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 652D403FF4FA8B7212793991 /* Pods-tumTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -448,6 +630,7 @@
 		};
 		AB7CC9001DB3EB72005EEE5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 229227F7F074D04B4612CCE1 /* Pods-tumTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +645,7 @@
 		};
 		AB7CC9021DB3EB72005EEE5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24F6643673EA2B9633D637C6 /* Pods-tumUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = tumUITests/Info.plist;
@@ -475,6 +659,7 @@
 		};
 		AB7CC9031DB3EB72005EEE5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAEDBB441336484FA81C7DA5 /* Pods-tumUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = tumUITests/Info.plist;
@@ -505,6 +690,7 @@
 				AB7CC8FD1DB3EB72005EEE5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB7CC8FE1DB3EB72005EEE5A /* Build configuration list for PBXNativeTarget "tumTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +699,7 @@
 				AB7CC9001DB3EB72005EEE5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB7CC9011DB3EB72005EEE5A /* Build configuration list for PBXNativeTarget "tumUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +708,7 @@
 				AB7CC9031DB3EB72005EEE5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
