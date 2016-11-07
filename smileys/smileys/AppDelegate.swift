@@ -1,13 +1,12 @@
 //
 //  AppDelegate.swift
-//  Twitter
+//  smileys
 //
-//  Created by Prachie Banthia on 11/1/16.
+//  Created by Prachie Banthia on 11/2/16.
 //  Copyright © 2016 Prachie Banthia. All rights reserved.
 //
 
 import UIKit
-import BDBOAuth1Manager
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,32 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        window = UIWindow.init(frame: UIScreen.main.bounds)
-        
-        if User.currentUser != nil {
-            print("there is a current user")
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            
-            let hamburgerVC = storyboard.instantiateViewController(withIdentifier: "HamburgerViewController") as! HamburgerViewController
-            let menuVC = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
-            
-            menuVC.hamburgerViewController = hamburgerVC
-            hamburgerVC.menuViewController = menuVC
-            
-            window?.rootViewController = hamburgerVC
-            
-            
-            //let vc = storyboard.instantiateViewController(withIdentifier: "TweetsNavController")
-            //window?.rootViewController = vc
-        }
-        
-        NotificationCenter.default.addObserver(forName: User.logoutNotificationName, object: nil, queue: OperationQueue.main) {
-            (notification: Notification) in
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = storyboard.instantiateInitialViewController()
-            self.window?.rootViewController = viewController
-        }
-        
         return true
     }
 
@@ -68,12 +41,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
 
-        TwitterClient.sharedInstance?.handleOpenUrl(url: url)
-                
-        return true
-    }
-    
 }
 

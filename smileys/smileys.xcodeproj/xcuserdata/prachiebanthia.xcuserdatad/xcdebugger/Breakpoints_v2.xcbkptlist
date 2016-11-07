@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "smileys/ViewController.swift"
+            timestampString = "499838678.378304"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "smileys.ViewController.gestureRecognizer (__ObjC.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith : __ObjC.UIGestureRecognizer) -&gt; Swift.Bool"
+                  moduleName = "smileys"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prachiebanthia/Desktop/Class/smileys/smileys/ViewController.swift"
+                  timestampString = "499837517.606079"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "2208">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "smileys.ViewController.(gestureRecognizer (__ObjC.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith : __ObjC.UIGestureRecognizer) -&gt; Swift.Bool).(closure #1)"
+                  moduleName = "smileys"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prachiebanthia/Desktop/Class/smileys/smileys/ViewController.swift"
+                  timestampString = "499837517.609126"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

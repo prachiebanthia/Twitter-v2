@@ -50,16 +50,14 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let tweet = tweets[indexPath.row]
         cell.desc.text = tweet.texto
         if let profileImageUrl = tweet.user?.profileUrl {
-            cell.profileImg.setImageWith(profileImageUrl)
-            cell.profileImg.layer.cornerRadius = 8.0
-            cell.profileImg.clipsToBounds = true
+            cell.profileImg?.setImageWith(profileImageUrl)
+            cell.profileImg?.layer.cornerRadius = 8.0
+            cell.profileImg?.clipsToBounds = true
         } else {
-            cell.profileImg.image = nil
+            cell.profileImg?.image = nil
         }
 
         if let screenname = tweet.user?.screenname {
-            print("screenname")
-            print(screenname)
             cell.username.text = "@\(screenname)"
         } else {
             cell.username.text = nil
@@ -91,7 +89,22 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     // passes tweet data to the detail view
     override func prepare(for segue: UIStoryboardSegue, sender s: Any?) {
-        if(segue.identifier == "DetailSegue"){
+        if (segue.identifier == "ProfileSegue"){
+            print("in the prof segue")
+            let destinationVC = segue.destination as! ProfileViewController
+            let s1 = s as! UITapGestureRecognizer
+            let swipeLocation = s1.location(in: self.tableView)
+            if let swipedIndexPath = tableView.indexPathForRow(at: swipeLocation) {
+                if let swipedCell = self.tableView.cellForRow(at: swipedIndexPath) as? TweetCell {
+                    let tweet = tweets[swipedIndexPath.row]
+                    destinationVC.numTweets = tweet.user?.numTweets ?? 0
+                    destinationVC.numFollowers = tweet.user?.numFollowers ?? 0
+                    destinationVC.backgroundUrl = tweet.user?.backgroundUrl
+                    destinationVC.numFollowing = tweet.user?.numFollowing ?? 0
+                }
+            }
+        } else if(segue.identifier == "DetailSegue"){
+            print("in the detail segue")
             let destinationVC = segue.destination as! DetailViewController
             if let index = tableView.indexPath(for: s as! TweetCell){
                 if let cell = tableView.cellForRow(at: index) as? TweetCell {

@@ -9,6 +9,8 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    var tweets = [Tweet]()
 
     @IBOutlet weak var profImage: UIImageView!
     @IBOutlet weak var desc: UILabel!
