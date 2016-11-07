@@ -2,7 +2,7 @@
 
 Twitter is a basic twitter app to read and compose tweets from the [Twitter API](https://apps.twitter.com/).
 
-Time spent: 7.5 hours spent in total
+Time spent: 7.5+7 hours spent in total
 
 ## User Stories
 
@@ -30,6 +30,7 @@ The following **required** functionality is completed:
 Here's a walkthrough of implemented user stories:
 
 <img src='http://i.imgur.com/2giKJoY.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/jkcSGCa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
