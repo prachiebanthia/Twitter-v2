@@ -37,6 +37,9 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
             print("Error fetching tweets \(error?.localizedDescription)")
         }
 
+        
+        print("the tweets")
+        print(tweets)
         // Do any additional setup after loading the view.
     }
 
